@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { DataService } from './data.service';
+import { Test } from './test.model';
 
 @Component({
   selector: 'app-root',
@@ -9,27 +11,27 @@ import { HttpClient } from '@angular/common/http';
 
 export class AppComponent implements OnInit{
 
-   ROOT_URL = 'http://salimov.site/mahammad/frontend-test/shark-eater.json';
+   URL = 'http://salimov.site/mahammad/frontend-test/shark-eater.json';
 
    prod = "http://localhost:3000/products"
 
-  products:any;
+  products:Test[];
 
   constructor(
-    private http: HttpClient
+    private dataService:DataService
   ){
 
   }
   ngOnInit(){
-    this.getProducts();
+   return this.dataService.getData()
+          .subscribe(data=> {
+            this.products = data
+            console.log(this.products)
+          })
   }
 
-getProducts(){
-   this.http.get(this.prod).subscribe(data=>{
-    
-    console.log(data)
-  })
+
   
 }
 
-}
+

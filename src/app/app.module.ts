@@ -13,6 +13,7 @@ import { MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatButtonM
 import { PortalModule } from '@angular/cdk/portal';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,7 @@ import { HttpClientModule } from '@angular/common/http';
     ScrollingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

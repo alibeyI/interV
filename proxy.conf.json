@@ -1,0 +1,8 @@
+{
+    "/mahammad/*": {
+       "target": "http://salimov.site",
+       "secure": false,
+       "changeOrigin": true
+    }
+  }
+  
