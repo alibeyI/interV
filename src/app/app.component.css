@@ -22,19 +22,17 @@
 .fab{
     margin: 5px;
     font-weight: bold;
-    font-size: 33px !important;
+    font-size: 33px ;
     border-radius: 100px;
 }
 .fas{
     margin: 5px;
     font-weight: bold;
-    font-size: 33px !important;
+    font-size: 33px ;
     border-radius: 100px;
 
 }
-.fa-star{
-    font-size: 10px;
-}
+
 .diff{
     margin-top: 300px;
     margin-left: 700px;
@@ -83,7 +81,7 @@ a[href], a[href]:hover {color: grey; font-size: 0.5em; text-decoration: none}
 .starrating > input {display: none;}  /* Remove radio buttons */
 
 .starrating > label:before { 
-  content: "\f005"; /* Star */
+  content: ""; /* Star */
   margin: 2px;
   font-size: 1px;
   display: inline-block; 

@@ -63,11 +63,11 @@
             <br>
             <div class="container">
               <div class="starrating risingstar  flex-row-reverse">
-                  <input  id="star5"  /><label for="star5" ><i class="fas fa-star"></i></label>
-                  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star"><i class="fas fa-star"></i></label>
-                  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star"><i class="fas fa-star"></i></label>
-                  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star"><i class="fas fa-star"></i></label>
-                  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+                  <input  id="star5"  /><label for="star5" ><i class="fas fa-star" style="font-size: 15px;"></i></label>
+                  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star"><i class="fas fa-star" style="font-size: 15px;"></i></label>
+                  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star"><i class="fas fa-star" style="font-size: 15px;"></i></label>
+                  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star"><i class="fas fa-star" style="font-size: 15px;"></i></label>
+                  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"><i class="fas fa-star" style="font-size: 15px;"></i></label>
                   <span>Reviews: {{products.reviews}}</span>
               </div>
         </div>	
@@ -86,7 +86,7 @@
               <mat-tab label="Description">
                  <p class="textS">{{products.description}}</p>
             </mat-tab>
-              <mat-tab label="Features">{{products.features}}</mat-tab>
+              <mat-tab label="Features"><h4>{{products.features}}</h4></mat-tab>
               <mat-tab label="Dimensions">{{products.dimensions}}</mat-tab>
             </mat-tab-group>
             
